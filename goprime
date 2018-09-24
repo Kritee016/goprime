@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	var num int
+	var flag int = 0
+	fmt.Println("Enter a Number:")
+	fmt.Scanf("%d", &num)
+
+	for i := 1; i <= num; i++ {
+		if num%i == 0 {
+			flag++
+		}
+	}
+	if flag == 2 {
+		fmt.Printf("Number %d is Prime", num)
+	} else {
+		fmt.Printf("Number %d is Not Prime", num)
+	}
+
+}
+
